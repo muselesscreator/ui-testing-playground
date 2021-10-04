@@ -1,0 +1,84 @@
+// frontend-app-*/src/index.scss
+@import "~@edx/brand/paragon/fonts";
+@import "~@edx/brand/paragon/variables";
+@import "~@edx/paragon/scss/core/core";
+@import "~@edx/brand/paragon/overrides";
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+$input-focus-box-shadow: $input-box-shadow; // hack to get upgrade to paragon 4.0.0 to work
+
+@import "~@edx/frontend-component-footer/dist/_footer";
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex-grow: 1;
+  }
+
+  header {
+    flex: 0 0 auto;
+
+    .logo {
+      display: block;
+      box-sizing: content-box;
+      position: relative;
+      top: 0.1em;
+      height: 1.75rem;
+      margin-right: 1rem;
+      img {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+
+  footer {
+    flex: 0;
+  }
+
+  width: 1920px;
+  height: 1080px;
+  max-width: 1920px;
+  max-height: 1080px;
+  position: absolute;
+  #wrapper {
+    #header {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      height: 60px;
+      background-color: $gray-500;
+      img.logo-img {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 20;
+      }
+      .title {
+        color: $gray-200;
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 20px;
+      }
+    }
+
+    #footer {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: 60px;
+      background-color: $gray-500;
+    }
+  }
+}

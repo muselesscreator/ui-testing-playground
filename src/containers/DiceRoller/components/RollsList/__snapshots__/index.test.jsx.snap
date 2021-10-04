@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RollsList component snapshot 1`] = `
+<div
+  className="rolls-list"
+>
+  <div
+    className="rolls-container"
+  >
+    <div
+      className="roll-entry"
+      key="0"
+    >
+      You rolled 2 on a d4
+    </div>
+    <div
+      className="roll-entry"
+      key="1"
+    >
+      You rolled 5 on a d10
+    </div>
+    <div
+      className="roll-entry"
+      key="2"
+    >
+      You rolled 18 on a d20
+    </div>
+  </div>
+  <div
+    className="action-bar"
+  >
+    <Button
+      className="clear-rolls-btn"
+      onClick={[MockFunction this.props.clearRolls]}
+    >
+      Clear
+    </Button>
+  </div>
+</div>
+`;

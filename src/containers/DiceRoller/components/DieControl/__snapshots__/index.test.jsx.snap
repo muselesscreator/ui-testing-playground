@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DieControl component snapshot 1`] = `
+<div
+  className="die-control"
+>
+  <Image
+    alt="dice"
+    className="die-img"
+    src="https://s3.amazonaws.com/files.thegamecrafter.com/23ab580e2280cd20f2ef36260eb2b8902132e5f7"
+  />
+  <br />
+  <div
+    className="last-value"
+  >
+    Last Roll: 2
+  </div>
+  <Button
+    className="roll-btn"
+    onClick={[MockFunction this.roll]}
+  >
+    Roll 1
+    d4
+  </Button>
+</div>
+`;
